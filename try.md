@@ -1,0 +1,151 @@
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="baidu-site-verification" content="Tn08RObQFn">
+<title>微信支付 - 中国领先的第三方支付平台 ｜ 微信支付提供安全快捷的支付方式</title>
+<meta name="keywords" content="微信支付,微信,支付,移动支付,手机支付,微支付,微信支付开通,微信支付接入,微信支付申请,微信支付官网,微信支付商户平台,微信支付接口开发,微信支付接口申请,微信支付客服,微信支付登录">
+<meta name="description" content="微信支付是腾讯公司的支付业务品牌，微信支付提供公众号支付、APP支付、扫码支付、刷卡支付等支付方式。微信支付结合微信公众账号，全面打通O2O生活消费领域，提供专业的互联网+行业解决方案，微信支付支持微信红包和微信理财通，是移动支付的首选。">
+<link rel="shortcut icon" href="https://wx.gtimg.com/core/favicon.ico" type="image/x-icon">
+<style>
+body,ol,ul,h1,h2,h3,h4,h5,h6,p{margin:0;padding:0;}
+body{min-width:1200px;font:14px "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;background:#fff;-webkit-text-size-adjust:100%;color:#222;}
+a{color:#459ae9;text-decoration:none;}
+a:hover{color:#459ae9;text-decoration:underline;}
+i,em{font-style:normal;}
+strong{font-weight:normal;}
+li{list-style:none;}
+img{border:0;vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;}
+.hide{display:none;}
+.red{color:#e15f63!important;}
+
+.login-form label,.cbx,.warn,.ico-new,.ico-right,.payment .icon,.payment .corner{background:url(https://wx.gtimg.com/pay/img/home/base.png?v=20160410) no-repeat;overflow:hidden;}
+
+.clr:after{content:".";clear:both;display:block;height:0;visibility:hidden;}
+.clr{zoom:1;}
+.hide{display:none;}
+.vs{margin:0 10px;font-family:arial;color:#ccc;}
+.cbx{width:16px;height:16px;display:inline-block;margin:-3px 6px 0 0;*margin-top:0;vertical-align:middle;cursor:pointer;overflow:hidden;}
+.cbx{background-position:0 -54px;}
+.cbx-on{background-position:0 -80px;display:inline-block;}
+ 
+.wrap{width:1025px;margin:0 auto;overflow:hidden;zoom:1;}
+.container{margin:25px auto;}
+.topbar{height:33px;line-height:33px;color:#999;background:#f6f6f6;border-bottom:1px solid #dcdcdc;font:12px/33px tahoma,arial,"Hiragino Sans GB",\5B8B\4F53,sans-serif;}
+.topbar a{color:#00c901;}
+
+.header{position:relative;z-index:99;background-color:#fff;border-bottom:1px solid #d9dadc;}
+.header .wrap{height:60px;position:relative;overflow:visible;z-index:999}
+.header .logo{float:left;width:232px;overflow:hidden;}
+.header .logo a{display:block;height:40px;margin-top:12px;text-indent:-999px;background:url(https://wx.gtimg.com/pay/img/common/logo.png?v=20160114) no-repeat}
+.header .link{float:right;line-height:60px;}
+.header .link a{color:#222;}
+.header .link a:hover{color:#459ae9}
+.header .pole-msg{display:inline-block;*display:inline;position:relative;}
+.header .pole-msg .content-us{display:inline-block;width:75px;height:60px;position:relative;z-index:9;}
+.header .pole-msg .content-us:hover{color:#222;text-decoration:none;}
+.header .popup{display:none;position:absolute;top:59px;left:-97px;border:1px solid #e7e7eb;z-index:8;width:131px;}
+.header .show-popup .popup{display:block;line-height:26px;padding:14px 20px;background:#fff;}
+.header .show-popup .popup p{font-size:12px;color:#999}
+.header .show-popup .popup .tel{color:#333333;font-size:17px;}
+.header .show-popup .popup .bor-top{border-top:1px solid #e7e7eb;margin-top:10px;padding-top:10px;}
+.header .show-popup .content-us{background:#fff;border-left:1px solid #e7e7eb;border-right:1px solid #e7e7eb;padding-left:16px;margin:0 -1px 0 -17px;*left:-17px;}
+.header .dropdown-arrow{position:absolute;right:6px;top:29px;border-color:#c2c2c2 transparent transparent;border-style:solid dashed dashed;border-width:4px 4px 0;font-size:0;height:0;width:0;line-height:0;}
+.header .show-popup .dropdown-arrow{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg);-webkit-transition:all .25s ease 0s;-moz-transition:all .25s ease 0s;-o-transition:all .25s ease 0s;transition:all .25s ease 0s;}
+
+.footer{margin-top:60px;text-align:center;color:#999999;font:12px/1.6 tahoma,arial,"Hiragino Sans GB",\5B8B\4F53,sans-serif;}
+.footer .wrap{padding:25px 0;border-top:1px dotted #ccc;}
+.footer p{margin-bottom:8px;}
+.footer a{color:#999999;}
+.footer a:hover{color:#459ae9}
+
+.banner{height:410px;position:relative;}
+/*.banner .wrap-login{position:relative;}*/
+.banner .login{width:344px;margin:20px 0 0 677px;box-shadow:0 0 1px 1px #cecece;background:rgba(255,255,255,0.8);position: relative; z-index:8}
+.banner .login .login-in{border:1px solid #fff;padding:15px 15px 20px;}
+@media \0screen\,screen\9{
+.banner .login{background:#fff;filter:alpha(opacity=80);}
+.banner .login .login-in{position:relative;_position:static;}
+}
+.banner .login h2{margin-bottom:5px;font-size:20px;font-weight:400;}
+.banner .login h2 strong{display:none;}
+.banner .login a{color:#333}
+.banner .login a:hover{color:#459ae9}
+.banner .login .tips-error a{color:#459ae9}
+.banner .login .tips-error{line-height:24px;font-size:13px;color:#e15f63;}
+.banner .login .tips-warn .warn{float:left;width:16px;height:16px;background-position:-24px 0;margin-top:4px;}
+.banner .login .tips-warn p{float:right;color:#b29b4a;width:290px;font-size:13px;line-height:24px}
+.banner .login-form .login-mainly{margin-top:10px;margin-bottom:10px;}
+.banner .login-form .login-account,.banner .login-form .login-password{height:42px;line-height:42px;padding:3px 0;background:#fff;border-left:1px solid #cecece;border-top:1px solid #cecece;padding-left:54px;}
+.banner .login-form label{width:20px;height:20px;overflow:hidden;line-height:999px;float:left;margin:12px 0 0 -35px; position:absolute;}
+.banner .login-form input{width:100%;padding:11px 0;border:0;box-shadow:0;outline:0;font-family:"Microsoft YaHei";font-size:14px;}
+.banner .login-form .ico-account{background-position:0 0;}
+.banner .login-form .ico-password{background-position:0 -26px;}
+.banner .login-form .login-password{margin-top:10px;}
+.banner .login-password-on .login-account{border-bottom:none;}
+.banner .login-verify{margin-bottom:10px;height:38px;}
+.banner .login-verify input{width:100px;padding:10px;vertical-align:middle;border-left:1px solid #cecece;border-top:1px solid #cecece;}
+.banner .login-verify input:focus{border-left:1px solid #cecece;border-top:1px solid #cecece;}
+.banner .login-verify .img-verify{width:100px;height:40px;margin:0 11px;vertical-align:middle;}
+.banner .login-memory{margin-bottom:20px;overflow:hidden;zoom:1;}
+.banner .login-memory .memory-account{float:left;}
+.banner .login-memory .forget-password{float:right;}
+.banner .login .btn-login{display:inline-block;width:100%;height:45px;line-height:45px;background-color:#00c800;color:#fff;border:1px solid #44b549;text-align:center;font-size:20px;}
+.banner .login .btn-login:hover{text-decoration:none;background:#2F9833;color:#fff;}
+
+
+/*图片轮播*/
+.cms-banner{position:absolute;top:0;width:100%;height:410px;overflow:hidden; left:0}
+.cms-banner a{display:block;width:100%;height:410px;text-indent:-9999px;}
+.cms-banner ul li{position:absolute;top:0;width:100%;height:410px;background-position:center;background-repeat:no-repeat;}
+.cms-banner ol{position:absolute;z-index:9;bottom:0px;display:table;left:50%;margin-left:-73px;padding:16px 16px 16px 0;}
+.cms-banner ol li{float:left;width:10px;height:10px;margin-left:16px;text-indent:-9999px;background:#fff;border-radius:5px;overflow:hidden;}
+.cms-banner ol li.active{background:#44B549;}
+
+
+/*最新公告*/
+.cms-notice{margin-top:5px;position:relative;_zoom:1;}
+.cms-notice h2,.cms-notice ul,.cms-notice p{display:inline-block;line-height:20px;}
+.cms-notice h2{float:left;background:#595B5B;color:#fff;font-size:14px;padding:0px 4px;}
+.cms-notice li{float:left;margin-left:18px;_margin-left:9px;width:275px;}
+.cms-notice a{color:#222}
+.cms-notice a:hover{color:#459ae9}
+.cms-notice li .time{float:left;color:#999;margin-right:5px;}
+.cms-notice li a{display:inline-block;max-width:205px;_width:205px;height:21px;white-space:nowrap;overflow-x:hidden;text-overflow:ellipsis;}
+.cms-notice .more{position:absolute;top:0;right:0;}
+.cms-notice .ico-new{position:absolute;display:inline-block;width:17px;height:9px;margin-left:5px;background:url(https://wx.gtimg.com/mch/img/ico-new.png);}
+.cms-notice .ico-right{display:inline-block;width:11px;height:9px;margin:0 0 0 3px;vertical-align:middle;background-position:-4px -136px;}
+
+
+/*四大支付方式*/
+.payment h2,.tenant h2{font-size:20px;font-weight:normal;margin-bottom:20px;}
+.payment{margin-top:30px;overflow:hidden;}
+.payment ul{width:105%;}
+.payment li{float:left;margin-right:15px;text-align:center;position:relative}
+.payment li a{width:161px;height:266px; padding:0 15px;display:block;position:relative;border:1px solid #e5e5e5;}
+.payment li span{display:block;}
+.payment .icon{display:block;width:70px;height:60px;margin:60px auto 0;-webkit-transition:margin-top 0.2s linear;-moz-transition:margin-top 0.2s linear;-ms-transition:margin-top 0.2s linear;-o-transition:margin-top 0.2s linear;transition:margin-top 0.2s linear;}
+.payment .ico-web{background-position:0 -160px;}
+.payment .ico-app{background-position:0 -220px;}
+.payment .ico-qrcode{background-position:0 -280px;}
+.payment .ico-quick{background-position:0 -340px;}
+.payment .ico-checkout{background-position:0 -400px;}
+.payment .title{display:block;color:#000000;font-size:16px;margin-top:25px;font-weight:normal}
+.payment .intro{color:#999999;font-size:12px;margin-top:15px; line-height:18px;}
+.payment .apply{margin:15px auto 0;width:141px;height:35px;line-height:35px;background-color:#00C800;font-size:14px;color:#FFFFFF;border-bottom:1px solid #00A000;display:none;}
+.payment .corner{width:62px;height:62px;position:absolute;top:0;right:0;background-position:-50px 0}
+.payment a:hover{border:1px solid #00c800;text-decoration:none}
+.payment a:hover .icon{margin-top:35px;-webkit-transition:margin-top 0.2s linear;-moz-transition:margin-top 0.2s linear;-ms-transition:margin-top 0.2s linear;-o-transition:margin-top 0.2s linear;transition:margin-top 0.2s linear;}
+.payment a:hover .apply{display:block;}
+
+.tenant{margin-top:39px;}
+.tenant h2{margin-bottom:10px;}
+.tenant ul{height:312px;background:url(https://wx.gtimg.com/pay/img/home/qrcode.png?v=20150602) center top no-repeat;}
+.tenant li{font-size:16px;margin-top:58px;margin-left:68px;position:absolute;}
+.tenant .l2{margin-top:143px;}
+.tenant .l3{margin-top:228px;}
+.tenant .l4{margin-left:748px;}
+.tenant .l5{margin-top:143px;margin-left:755px;}
+.tenant .l6{margin-top:228px;margin-left:755px;}
+</style>
+</head>
